@@ -1,0 +1,243 @@
+
+/* =========== SCROLL BAR =========== */
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: var(--preto-fundo);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #eb9813db;
+    border-radius: 20px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,      /* Remover setas do input tipo "number" */
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+:root{
+    --laranja-geral: #eb9813;
+    --preto-fundo: rgb(10,10,10);
+    --vinho-vino: #7f2c30;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background: linear-gradient(90deg, #000, rgb(24, 24, 24)); */
+    background-color: var(--preto-fundo);
+    height: 100vh;
+}
+
+.interface_system{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 12%;
+    background-color: var(--preto-fundo) ;
+}
+
+header > .interface_system{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo #img_logo{
+    width: 350px;
+}
+
+.btn-sair button{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--laranja-geral);
+    border: 0;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: .20s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #e3b160;
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+/* =========== CADASTRO DE PRODUTOS =========== */
+
+
+
+
+.alinharRotulos {
+    text-align: right;
+    font-weight: 600;
+}
+
+.alinharRotulos span {
+color: var(--laranja-geral);
+}
+
+.spaceElements{
+    font-size: 8px;
+    color: var(--laranja-geral);
+}
+
+.fileira{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#txtNomeProduto, #txtCodProduto, #txtPesoProduto, #txtValOrProduto, #txtManiProduto, #txtValidProduto, #txtFornProduto, #txtLotProduto, #txtResProduto{
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+}
+
+.alinhaBtns {
+    width:30%;
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    border:0px;
+    padding:8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .20s;
+}
+
+.alinhaBtns:hover{
+    box-shadow: 0px 0px 8px #00000077;
+    transform: scale(1.05);
+}
+
+table {
+    background-color: var(--laranja-geral);
+    border-radius: 15px; 
+    color:white;
+    padding:20px;
+    width:600px;
+    margin:auto;
+
+}
+caption {
+    color:white; 
+    font-weight: bold; 
+    font-size: 27px;
+    padding-bottom: 20px;
+}
+
+.footer-all{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    color: white;
+    font-size: 11px;
+}
+
+.footer1{
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    color: white;
+    font-size: 11px;
+}
+
+
+
+
+/* ================ MOBILE ================ */
+
+
+
+@media screen and (max-width: 1020px){
+
+
+/* Desativar botão DESCONECTAR e centralizar imagem logo */
+
+.logo #img_logo{
+    width: 200px;
+   }
+
+.btn-sair{
+    display: none;
+}
+
+header{
+    padding: 20px ;
+}
+
+
+/* Tabela de cadastro */
+
+table {
+    padding:10px;
+    width:100px;
+
+
+}
+
+caption {
+    font-size: 20px;
+    padding-bottom: 10px;
+
+
+}
+
+
+
+
+
+#txtNomeProduto, #txtCodProduto, #txtPesoProduto, #txtValOrProduto, #txtManiProduto, #txtValidProduto, #txtFornProduto, #txtLotProduto, #txtResProduto{
+    width: 230px;
+    padding: 10px;
+    text-align:center;
+
+}
+
+.alinharRotulos{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 1px;
+}
+
+.spaceElements{
+
+   font-size: 8px;
+}
+
+.alinharRotulos span {
+    display: none;
+    }
+
+
+
+
+
+}

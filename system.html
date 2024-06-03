@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style_system.css">
+    <script src="script.js"></script>
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS-->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP -->
+
+    <title>DataPrint | Dashboard</title>
+    <link rel="shortcut icon" href="images/logo_branca.png">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="interface_system">
+
+            <div class="logo">
+                <img src="images/dashboard.png" alt="" id="img_logo">
+            </div><!-- logo -->
+
+            <div class="btn-sair">
+                <button type="submit" onclick="desconectar(); return false">Desconectar</button>
+            </div><!-- btn-sair -->
+        </div> <!-- interface_system -->
+    </header>
+
+    
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table>
+            <caption>Cadastro de Etiqueta ANVISA</caption>
+            <!--Nome do produto-->
+            <tr>
+                <td class="alinharRotulos">Nome do produto <span>__</span></td>
+                <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Tipo do produto-->
+            <tr>
+                <td class="alinharRotulos">Tipo <span>__</span></td>
+                <td><input id="txtCodProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Peso do produto-->
+            <tr>
+                <td class="alinharRotulos">Peso <span>__</span></td>
+                <td><input id="txtPesoProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Val. Original do produto-->
+            <tr>
+                <td class="alinharRotulos">Val. Original <span>__</span></td>
+                <td><input id="txtValOrProduto" type="date"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>    
+            </tr>
+            <!--Manipulação do produto-->
+            <tr>
+                <td class="alinharRotulos">Manipulação <span>__</span></td>
+                <td><input id="txtManiProduto" type="date"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Validade do produto-->
+            <tr>
+                <td class="alinharRotulos">Validade <span>__</span></td>
+                <td><input id="txtValidProduto" type="date" ></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Fornecedor do produto-->
+            <tr>
+                <td class="alinharRotulos">Fornecedor <span>__</span></td>
+                <td><input id="txtFornProduto" type="text"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Lote/Sif do produto-->
+            <tr>
+                <td class="alinharRotulos">Lote / SIF <span>__</span></td>
+                <td><input id="txtLotProduto" type="tel"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+            <!--Responsavel do produto-->
+            <tr>
+                <td class="alinharRotulos">Responsável <span>__</span></td>
+                <td><input id="txtResProduto" type="txt"></td>
+            </tr>
+            <tr>
+                <td class="spaceElements">.</td>
+            </tr>
+       
+        
+
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <div class="fileira">
+                    
+                    <input type="reset" value="Limpar" class="alinhaBtns">    
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','txtPesoProduto', 'txtValOrProduto', 'txtManiProduto', 'txtValidProduto', 'txtFornProduto', 'txtLotProduto', 'txtResProduto')">
+            
+   
+                    </div> <!-- fileira -->
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+
+ 
+
+
+</body>
+<div class="footer-all">
+<h5 class="footer">© 2024 nigus IT - Todos os direitos reservados.</h5>
+<h5 class="footer1">v1.0</h5>
+</div>
+
+</html>
